@@ -1,0 +1,195 @@
+body {
+    font-family: Courier New, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin-top: 25px;
+}
+h2{
+    margin-bottom: 25px;
+}
+h3{
+    margin-top: 25px;
+}
+
+span,p{
+    margin: 6px;
+}
+dd,dt{
+    margin: 3px;
+}
+dd{
+    margin-left: 20px;
+}
+dt{
+    font-weight: bold;
+}
+
+header {
+    background-color: #363636;
+    color: #fff;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    width: 100;
+    height: auto;
+}
+
+.navbar {
+    color: #fff;
+    padding: 0%;
+    text-align: center;
+    height: 55px;
+}
+
+.navbar ul {
+    list-style: none;
+    justify-content: center;
+    padding: 16px;
+}
+ul li{
+    list-style: none;
+}
+.navbar li {
+    display: inline;
+    font-size: 16px;
+    max-width: 100%;
+    margin-right: 100px;
+    padding: 15px;
+    background-color: rgb(73, 73, 73);
+    border-radius: 5%;
+    border: #ffffff solid 3px;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+main img{
+    max-width: 100%;
+    height: auto;
+}
+
+main div {
+    margin-bottom: 60px;
+}
+
+footer {
+    background-color: #363636;
+    color: #fff;
+    text-align: left;
+    padding: 30px;
+    padding-left: 200px;
+    font-size: 14px;
+    width: 100;
+    height: auto;
+}
+
+/*dorpdown*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.drop{
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    padding: 12px;
+    z-index: 1;
+    border-radius: 1px;
+    text-align: left;
+    line-height: 60px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    padding: 15px;
+    margin: 15px;
+}
+
+@media (max-width: 425px) {
+    h2{
+        display: none;
+    }
+    .navbar{
+        text-align: left;
+        display: inline-block;
+    }
+    .navbar li{
+        line-height: 60px;
+        border: #ffffff solid 1px;
+        border-radius: 5%;
+    }
+    .navbar .hide{
+        padding-bottom: 20px;
+        display: none;
+    }
+    .dropdown:hover .dropdown-content {
+        padding: 0px;
+        margin: 0px;
+    }
+    footer{
+        padding-left: 10px;
+    }
+}
+@media (max-width: 768px) {
+    h2{
+        display: none;
+    }
+    .navbar{
+        text-align: left;
+    }
+    .navbar li{
+        padding-bottom: 20px;
+    }
+    main div{
+        padding-left: 50px ;
+        padding-right: 50px ;
+    }
+    main .pdf{
+        width: 1100px;
+        height: 600px;
+    }
+    footer{
+        padding-left: 10px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .navbar .more{
+        display: none;
+    }
+    .navbar ul {
+        display: block;
+        list-style: none;
+        justify-content: center;
+    }
+    main div{
+        padding-left: 50px ;
+        padding-right: 50px ;
+    }
+    
+}
+
+
+
